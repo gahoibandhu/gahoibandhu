@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gahoi Bandhu - Social Preview</title>
+<style>
+/* Social Preview Image - 1200x630px */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.preview-container {
+  width: 1200px;
+  height: 630px;
+  background: linear-gradient(135deg, #7a5800 0%, #c8900a 25%, #e8a020 50%, #c8900a 75%, #7a5800 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative pattern overlay */
+.preview-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,0,0,0.03) 10px, rgba(0,0,0,0.03) 20px);
+  opacity: 0.5;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 60px;
+  max-width: 1000px;
+}
+
+/* Main Logo/Title */
+.main-title {
+  font-size: 88px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 
+    3px 3px 6px rgba(0,0,0,0.5),
+    0 0 30px rgba(232,160,32,0.3);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+.main-title .hindi {
+  display: block;
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+
+.main-title .english {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a3a5c;
+  text-shadow: 
+    2px 2px 4px rgba(255,255,255,0.3),
+    0 0 20px rgba(255,255,255,0.2);
+}
+
+/* Tagline */
+.tagline {
+  font-size: 36px;
+  color: #1a3a5c;
+  background: rgba(255,255,255,0.95);
+  padding: 15px 40px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 40px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border: 3px solid rgba(26,58,92,0.2);
+}
+
+/* Features Grid */
+.features {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.feature-box {
+  background: rgba(255,255,255,0.98);
+  padding: 20px 35px;
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 20px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+  border: 2px solid rgba(232,160,32,0.3);
+  flex: 1;
+  max-width: 280px;
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+
+.feature-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a3a5c;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.feature-subtitle {
+  font-size: 18px;
+  color: #e8a020;
+  font-weight: 600;
+}
+
+/* Bottom Badge */
+.bottom-badge {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(26,58,92,0.95);
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  border: 3px solid #e8a020;
+}
+
+.bottom-badge .count {
+  color: #e8a020;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+/* Decorative corners */
+.corner {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 4px solid rgba(255,255,255,0.3);
+}
+
+.corner.top-left {
+  top: 20px;
+  left: 20px;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 30px 0 0 0;
+}
+
+.corner.top-right {
+  top: 20px;
+  right: 20px;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0 30px 0 0;
+}
+
+.corner.bottom-left {
+  bottom: 20px;
+  left: 20px;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 30px;
+}
+
+.corner.bottom-right {
+  bottom: 20px;
+  right: 20px;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 30px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="preview-container">
+  <!-- Decorative Corners -->
+  <div class="corner top-left"></div>
+  <div class="corner top-right"></div>
+  <div class="corner bottom-left"></div>
+  <div class="corner bottom-right"></div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="main-title">
+      <span class="hindi">गहोई बंधु</span>
+      <span class="english">GAHOI BANDHU</span>
+    </div>
+
+    <div class="tagline">
+      गौतम बुद्ध नगर का सबसे बड़ा गहोई नेटवर्क
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <div class="feature-icon">👥</div>
+        <div class="feature-title">Directory</div>
+        <div class="feature-subtitle">Member Network</div>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon">💑</div>
+        <div class="feature-title">Matrimony</div>
+        <div class="feature-subtitle">Rishta Service</div>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-box">
+        <div class="feature-icon">🎉</div>
+        <div class="feature-title">Community</div>
+        <div class="feature-subtitle">Events & Updates</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Badge -->
+  <div class="bottom-badge">
+    Join <span class="count">500+</span> Families • Greater Noida
+  </div>
+</div>
+
+</body>
+</html>

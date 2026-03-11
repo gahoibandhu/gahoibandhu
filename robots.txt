@@ -1,0 +1,21 @@
+# Robots.txt for Gahoi Bandhu
+# Website: https://gahoibandhu.netlify.app
+
+User-agent: *
+Allow: /
+Allow: /#/login
+Allow: /#/register
+Allow: /#/search
+Allow: /#/matrimony
+Allow: /#/events
+Allow: /#/space
+
+# Disallow admin pages
+Disallow: /#/admin
+Disallow: /#/profile
+
+# Sitemap
+Sitemap: https://gahoibandhu.netlify.app/sitemap.xml
+
+# Crawl-delay (be nice to server)
+Crawl-delay: 1
